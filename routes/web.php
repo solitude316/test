@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     $data = [];
-
+    $user = session('user');
     if (!is_null($user)) {
         $data['user'] = $user;
     }
